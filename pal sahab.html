@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Validation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+			
+    var $FirstNameRegEx = /^([a-zA-Z]{2,20})$/;
+    var $MiddleNameRegEx = /^([a-zA-Z ]{2,40})$/;
+    var $LastNameRegEx = /^([a-zA-Z ]{2,40})$/;
+    var $ConNoRegEx = /^([0-9]{10})$/;
+    var $GSTNoRegEx=/^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$/;
+
+</script>
+</head>
+<style type ="text/css">
+    small{color:blue}
+</style>
+<body>
+    First Name :<input type="text" placeholder="Enter your name" maxlength="20"><br><br>
+    <small id="TxtNameValidation"></small>
+    Middle Name:<input type="text" placeholder="Enter your midddle name" maxlength="20"><br><br>
+    <small id="TxtNameValidation"></small>
+    Last Name: <input type="text" placeholder="Enter your last name" maxlength="5"><br><br>
+    <small id="TxtNameValidation"></small>
+    Phone number : <input type="text" placeholder="Enter your number" maxlength="10"><br><br> 
+    <small id="TxtNameValidation"></small>  
+    <textarea rows="2" placeholder="Aukad me likho" maxlength="100"></textarea><br><br>
+     
+    <button>submit</button>
+     
+</body>
+</html>
